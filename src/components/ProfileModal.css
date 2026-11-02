@@ -1,0 +1,178 @@
+/* ─── Profile Modal ────────────────────────────────────────────── */
+
+.pm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.pm-box {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+/* Header */
+.pm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pm-title {
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.pm-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.15s;
+}
+
+.pm-close:hover {
+  color: var(--text-primary);
+}
+
+/* Section label */
+.pm-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 16px 24px 10px;
+}
+
+/* Profile row */
+.pm-profile-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0 24px 20px;
+}
+
+.pm-avatar {
+  width: 52px;
+  height: 52px;
+  background: var(--absa-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.pm-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pm-field-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pm-initials-input {
+  max-width: 80px;
+  text-transform: uppercase;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 2px;
+}
+
+/* Divider */
+.pm-divider {
+  height: 1px;
+  background: var(--border);
+}
+
+/* Account section */
+.pm-account {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 24px 20px;
+}
+
+.pm-account-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pm-account-value {
+  font-size: 13px;
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.pm-account-password {
+  font-family: "DM Mono", monospace;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+}
+
+.pm-change-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--absa-red);
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+
+.pm-change-link:hover {
+  opacity: 0.75;
+}
+
+/* Footer */
+.pm-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.pm-signout {
+  font-size: 13px;
+  color: var(--text-muted);
+}

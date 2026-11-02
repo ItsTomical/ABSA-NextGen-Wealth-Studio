@@ -1,0 +1,368 @@
+/* ─── Dashboard ───────────────────────────────────────────────── */
+
+/* Hero row */
+.income-hero-grid {
+  margin-bottom: 20px;
+}
+
+.surplus-neg {
+  color: var(--alert-red);
+}
+
+.surplus-delta {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.surplus-delta--neg {
+  color: var(--alert-red);
+}
+
+.surplus-delta span {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.surplus-bar {
+  margin-top: 10px;
+  height: 4px;
+}
+
+/* ─── Money Snapshot card ─────────────────────────────────────── */
+
+.snapshot-card {
+  margin-bottom: 20px;
+}
+
+.snapshot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.snapshot-edit-toggle {
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+/* Gross-to-net waterfall */
+.gtn-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.gtn-step {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.gtn-val {
+  font-family: "DM Mono", monospace;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.gtn-deduct {
+  color: var(--text-secondary);
+  font-size: 20px;
+}
+
+.gtn-result {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.stat-footnote {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.gtn-desc {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gtn-arrow {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+.gtn-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.gtn-seg {
+  height: 100%;
+  flex-shrink: 0;
+  transition: width 0.4s ease;
+}
+
+.gtn-seg-paye {
+  background: var(--absa-red);
+}
+.gtn-seg-uif {
+  background: #9ca3af;
+}
+.gtn-seg-net {
+  flex: 1;
+  background: var(--absa-dark);
+}
+
+/* Category breakdown */
+.snapshot-cats {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.snapshot-cat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.snapshot-cat-name {
+  font-size: 13px;
+  color: var(--text-secondary);
+  width: 68px;
+  flex-shrink: 0;
+}
+
+.snapshot-cat-track {
+  flex: 1;
+  height: 6px;
+  background: var(--surface-2);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.snapshot-cat-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+.snapshot-cat-amt {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
+  width: 72px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.snapshot-cat-pct {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  width: 30px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Key metrics (KPIs) */
+.snapshot-kpis {
+  display: flex;
+  gap: 0;
+}
+
+.snapshot-kpi {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 0;
+}
+
+.snapshot-kpi:first-child {
+  padding-left: 0;
+}
+
+.snapshot-kpi--sep {
+  border-left: 1px solid var(--border);
+}
+
+.snapshot-kpi-val {
+  font-family: "DM Mono", monospace;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+  flex-wrap: wrap;
+}
+
+.snapshot-kpi-lbl {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.snapshot-kpi-badge {
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
+/* Inline edit form */
+.snapshot-edit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 16px;
+}
+
+.snapshot-edit-cat {
+  color: var(--absa-red);
+  font-weight: 700;
+}
+
+.edit-field-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.edit-field-input {
+  font-family: "DM Mono", monospace;
+}
+
+/* Health score + goals right column */
+.health-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.health-label {
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+
+.goals-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Goals + donut */
+.goals-donut-grid {
+  margin-bottom: 20px;
+  grid-template-columns: 1fr 280px;
+  align-items: start;
+}
+
+.goals-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.goal-row--dim {
+  opacity: 0.45;
+}
+
+.goal-not-priority {
+  margin-left: 8px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.goal-edit-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.goal-row {
+  margin-bottom: 14px;
+}
+
+.goal-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.goal-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.goal-pct {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+}
+
+.goal-amounts {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.donut-card-label {
+  margin-bottom: 14px;
+}
+
+.donut-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Content tiles */
+
+.tile-label {
+  margin-bottom: 8px;
+}
+
+.tile-heading {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.tile-body {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

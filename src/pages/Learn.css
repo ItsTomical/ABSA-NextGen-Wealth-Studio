@@ -1,0 +1,139 @@
+/* ─── Learn Page ──────────────────────────────────────────────── */
+
+.learn-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Term detail panel */
+.learn-detail {
+  flex: 1;
+}
+
+.learn-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.learn-term-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.learn-term-full {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.learn-term-badge {
+  margin-top: 8px;
+}
+
+/* Sections */
+.learn-section {
+  margin-bottom: 20px;
+}
+
+.learn-section-label {
+  margin-bottom: 8px;
+}
+
+.learn-section-body {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Numbers card */
+.learn-numbers-card {
+  margin-bottom: 20px;
+  background: var(--surface-2);
+}
+
+.learn-numbers-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.learn-numbers-row:last-child {
+  border-bottom: none;
+}
+
+.learn-numbers-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.learn-numbers-value {
+  font-family: 'DM Mono', monospace;
+  font-weight: 600;
+}
+
+.learn-numbers-value--red {
+  font-family: 'DM Mono', monospace;
+  font-weight: 600;
+  color: var(--absa-red);
+}
+
+/* Appears-in tags */
+.learn-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.learn-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  background: var(--surface-2);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+/* Related terms */
+.learn-related-terms {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.learn-related-btn {
+  font-size: 12px;
+  padding: 4px 12px;
+}
+
+/* Pro tip */
+.learn-pro-tip {
+  border-left: 3px solid var(--absa-red);
+  padding: 12px 16px;
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.learn-pro-tip-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--absa-red);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.learn-pro-tip-body {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

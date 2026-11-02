@@ -1,0 +1,260 @@
+/* ─── Track Detail ────────────────────────────────────────────── */
+
+/* Breadcrumb */
+.track-breadcrumb {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.track-breadcrumb-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0;
+}
+
+/* Header right - time remaining */
+.track-header-right {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.track-time-remaining {
+  font-family: "Syne", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.track-time-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.badge-active-track {
+  padding: 5px 14px;
+  font-weight: 700;
+}
+
+/* Milestone card */
+.milestone-card {
+  margin-bottom: 20px;
+}
+
+.milestone-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.milestone-step-clickable {
+  cursor: pointer;
+}
+
+/* Layout: main + sidebar */
+.track-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+}
+
+/* Current milestone card */
+.current-milestone-card {
+  margin-bottom: 16px;
+}
+
+.current-milestone-year {
+  margin-bottom: 6px;
+}
+
+.current-milestone-title {
+  font-family: "Syne", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.milestone-progress-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.milestone-progress-label {
+  color: var(--text-secondary);
+}
+
+.milestone-progress-value {
+  font-family: "DM Mono", monospace;
+  font-weight: 600;
+}
+
+.milestone-progress-wrap {
+  margin-bottom: 16px;
+}
+
+.current-milestone-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* Action items */
+.action-items-label {
+  margin-bottom: 10px;
+}
+
+.action-item-clickable {
+  cursor: pointer;
+}
+
+.action-check-icon {
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.action-text--done {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.action-text--active {
+  color: var(--text-primary);
+}
+
+/* Philosophy card */
+.philosophy-card {
+  margin-top: 16px;
+}
+
+.philosophy-body {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.philosophy-columns {
+  display: flex;
+  gap: 16px;
+}
+
+.philosophy-col {
+  flex: 1;
+}
+
+.philosophy-col-label--green {
+  margin-bottom: 6px;
+  color: var(--green);
+}
+
+.philosophy-col-label--red {
+  margin-bottom: 6px;
+  color: var(--absa-red);
+}
+
+.philosophy-item {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 3px;
+}
+
+/* Rules card */
+.rules-card {
+  margin-top: 16px;
+}
+
+.rule-item {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.rule-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar cards */
+.alloc-card {
+  margin-bottom: 16px;
+}
+
+.alloc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.alloc-row-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.alloc-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.alloc-name {
+  font-size: 13px;
+}
+
+.alloc-pct {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Monthly breakdown */
+.breakdown-item {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breakdown-label {
+  font-size: 13px;
+}
+
+.breakdown-value {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.breakdown-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.breakdown-total-label {
+  color: var(--text-muted);
+}
+
+.breakdown-total-value {
+  font-family: "DM Mono", monospace;
+  font-weight: 700;
+}

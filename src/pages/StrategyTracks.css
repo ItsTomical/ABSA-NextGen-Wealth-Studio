@@ -1,0 +1,183 @@
+/* ─── Strategy Tracks ─────────────────────────────────────────── */
+
+/* Active track banner */
+.active-track-card {
+  margin-bottom: 24px;
+  border: 2px solid var(--absa-dark);
+}
+
+.active-track-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active-track-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.active-track-name {
+  font-family: "Syne", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.active-track-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.active-track-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.active-track-progress .track-prog-bar {
+  flex: 1;
+}
+
+.badge-active {
+  background: var(--absa-dark);
+  color: white;
+  font-weight: 700;
+  padding: 5px 12px;
+}
+
+/* All tracks section */
+.all-tracks-label {
+  margin-bottom: 16px;
+}
+
+/* Track card */
+.track-card {
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.track-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.track-card--active {
+  border: 2px solid rgba(220, 0, 0, 0.3);
+}
+
+.track-card-tag {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.track-card-name {
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.track-card-tagline {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.track-card-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.track-meta-label {
+  margin-bottom: 4px;
+}
+
+.track-meta-value {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.track-meta-value--mono {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.track-sacrifices {
+  margin-bottom: 16px;
+}
+
+.track-sacrifices-lead {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.track-sacrifice-item {
+  font-size: 12px;
+  color: var(--absa-red);
+  margin-right: 4px;
+}
+
+/* Milestone progress bar (shared by banner + card) */
+.track-prog-bar {
+  display: flex;
+  gap: 4px;
+}
+
+.track-prog-seg {
+  flex: 1;
+  height: 4px;
+  border-radius: 99px;
+}
+
+.track-prog-seg--done   { background: var(--green); }
+.track-prog-seg--active { background: var(--absa-red); }
+.track-prog-seg--todo   { background: var(--border); }
+
+.track-prog-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.track-card-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.track-card-progress .track-prog-bar {
+  flex: 1;
+}
+
+.track-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-view-btn {
+  padding: 4px 0;
+  text-decoration: underline;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.track-activate-btn {
+  font-size: 12px;
+  padding: 5px 12px;
+}

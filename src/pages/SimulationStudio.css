@@ -1,0 +1,201 @@
+/* ─── Simulation Studio ───────────────────────────────────────── */
+
+/* Page header */
+.studio-breadcrumb {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.studio-breadcrumb-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0;
+}
+
+.studio-num-tag {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.studio-back-btn {
+  font-size: 13px;
+}
+
+/* Studio inner layout - input panel + output panel */
+.studio-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 100px);
+}
+
+/* Input panel */
+.studio-input-panel {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  padding: 24px;
+}
+
+.studio-input-title {
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.studio-input-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.studio-input-section-label {
+  margin-bottom: 10px;
+}
+
+.studio-calc-summary {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.studio-calc-row {
+  margin-bottom: 4px;
+}
+
+.studio-calc-value {
+  color: var(--text-primary);
+}
+
+.studio-calc-value--red {
+  color: var(--absa-red);
+}
+
+.studio-calc-value--green {
+  color: var(--green);
+}
+
+.studio-reset-btn {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Output panel */
+.studio-output-panel {
+  padding: 24px;
+}
+
+.studio-chart-card {
+  margin-bottom: 16px;
+}
+
+.studio-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.studio-chart-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.studio-chart-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+}
+
+.studio-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.studio-legend-line {
+  width: 20px;
+  height: 2px;
+  display: inline-block;
+}
+
+.studio-legend-line--solid {
+  background: #0f1117;
+}
+
+.studio-legend-line--dashed {
+  border-top: 2px dashed #2563eb;
+}
+
+/* Metric cards row */
+.studio-metrics-grid {
+  margin-bottom: 16px;
+}
+
+.studio-metric-label {
+  margin-bottom: 4px;
+}
+
+.studio-metric-value--green {
+  color: var(--green);
+}
+
+.studio-metric-value--red {
+  color: var(--alert-red);
+}
+
+.studio-metric-value--blue {
+  color: var(--blue);
+}
+
+.studio-metric-value--amber {
+  color: var(--amber);
+}
+
+/* Verdict card */
+.studio-verdict {
+  margin-bottom: 16px;
+}
+
+/* Explainers */
+.studio-explainers {
+  margin-bottom: 12px;
+}
+
+.studio-explainers-label {
+  margin-bottom: 10px;
+}
+
+.studio-chart-title--mb {
+  margin-bottom: 16px;
+}
+.studio-page-header {
+  padding-bottom: 14px;
+}
+
+/* Property tip card */
+.studio-prop-tip {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.studio-prop-tip-heading {
+  font-size: 13px;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.studio-prop-tip-body {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
